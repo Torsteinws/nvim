@@ -1,6 +1,11 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+-- Add any additional keymaps here vim.keymap.set("n", "<leader>k", function()
+--   print("Hello")
+-- end, { desc = "Hello" })
+
+-- local gitsigns = require("gitsigns")
+-- vim.keymap.set("m", "<leader>ga", gitsigns.stage_hunk, { desc = "Stage hunk" })
 
 -- Smart navigate between nvim and zellij splits
 -- https://github.com/mrjones2014/smart-splits.nvim
