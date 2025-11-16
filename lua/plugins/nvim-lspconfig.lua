@@ -1,18 +1,12 @@
 return {
     {
         "neovim/nvim-lspconfig",
+        ---@class PluginLspOpts
         opts = {
             ---@type lspconfig.options
             servers = {
-                jsonls = {
-                    settings = {
-                        json = {
-                            format = {
-                                -- enable = false,
-                                keepLines = true,
-                            },
-                        },
-                    },
+                denols = {
+                    enabled = true,
                 },
             },
         },
