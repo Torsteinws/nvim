@@ -1,11 +1,10 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here vim.keymap.set("n", "<leader>k", function()
---   print("Hello")
--- end, { desc = "Hello" })
+-- Normal mode: Tab to indent, Shift+Tab to unindent
+vim.keymap.set("n", "<Tab>", ">>", { desc = "Indent line" })
+vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent line" })
 
--- local gitsigns = require("gitsigns")
--- vim.keymap.set("m", "<leader>ga", gitsigns.stage_hunk, { desc = "Stage hunk" })
+-- Visual mode: Tab to indent, Shift+Tab to unindent (stay in visual mode)
+vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent selection" })
+vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
 
 -- Smart navigate between nvim and zellij splits
 -- https://github.com/mrjones2014/smart-splits.nvim
