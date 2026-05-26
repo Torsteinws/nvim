@@ -1,4 +1,5 @@
 -- Normal mode: Tab to indent, Shift+Tab to unindent
+vim.keymap.set("n", "<C-i>", "<C-i>", { desc = "Jump forward" })
 vim.keymap.set("n", "<Tab>", ">>", { desc = "Indent line" })
 vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent line" })
 

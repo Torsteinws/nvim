@@ -4,6 +4,7 @@
 
 vim.o.background = "dark"
 -- vim.o.background = "light"
+-- vim.cmd("colorscheme tokyonight-night")
 
 vim.opt.autowriteall = true
 
@@ -14,3 +15,5 @@ vim.opt.smartindent = true
 
 -- Ensure Prettier uses your global config as fallback
 vim.g.prettier_config_precedence = "prefer-file" -- Use project config if it exists, otherwise global
+-- Needed to not cause conflict with biome
+vim.g.lazyvim_prettier_needs_config = true
