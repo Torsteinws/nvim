@@ -7,6 +7,16 @@ vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent line" })
 vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent selection" })
 vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
 
+-- Don't clutter the clipboard
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+-- vim.keymap.set({ "n", "v" }, "d", '"2d')
+-- vim.keymap.set({ "n", "v" }, "D", '"2D')
+vim.keymap.set({ "n", "v" }, "c", '"2c')
+vim.keymap.set({ "n", "v" }, "C", '"2C')
+-- Swap p and P in visual mode
+-- vim.keymap.set("v", "p", "P")
+-- vim.keymap.set("v", "P", "p")
+
 -- Smart navigate between nvim and zellij splits
 -- https://github.com/mrjones2014/smart-splits.nvim
 local smartSplits = require("smart-splits")
