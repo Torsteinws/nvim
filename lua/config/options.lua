@@ -2,9 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+-- These may be automatically toggled by an external switch theme script
 vim.o.background = "dark"
 -- vim.o.background = "light"
--- vim.cmd("colorscheme tokyonight-night")
 
 vim.opt.autowriteall = true
 
