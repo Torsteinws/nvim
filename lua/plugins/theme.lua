@@ -45,6 +45,35 @@ return {
         "scottmckendry/cyberdream.nvim",
         lazy = false,
         priority = 1000,
+        opts = {
+
+            colors = {
+                dark = {
+                    -- bg = "#0000ff",
+                    --
+                    -- bg_highlight = "#3c4048",
+                    -- bg_alt = "#1e2124",
+
+                    -- w:48.24
+                    -- grey = "#7b8496",
+                    -- w: 55%
+                    -- grey = "#8c8f96",
+                    -- w: 65%
+                    grey = "#9c9c9c",
+
+                    -- w: 23.53, l: 25.88
+                    -- bg_highlight = "#3c4048",
+                    -- -- w: 18.00
+                    -- bg_highlight = "#2e3748",
+                    -- l: 18.00
+                    -- bg_highlight = "#2a2d32",
+                    -- l: 16.00
+                    bg_highlight = "#25282d",
+                    -- l: 14.00
+                    -- bg_highlight = "#202327",
+                },
+            },
+        },
     },
     {
         "catppuccin/nvim",
@@ -54,7 +83,7 @@ return {
             dark = "auto",
             light = "latte",
         },
-        priority = 1000,
+        priority = 1001,
         config = function()
             -- vim.cmd("colorscheme catppuccin-mocha")
             -- vim.cmd("colorscheme catppuccin-macchiato")
