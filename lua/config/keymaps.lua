@@ -7,8 +7,9 @@ vim.keymap.set("n", "<S-Tab>", "<<", { desc = "Unindent line" })
 vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent selection" })
 vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
 
--- Don't clutter the clipboard
-vim.keymap.set({ "n", "v" }, "x", '"_x')
+-- Save all buffers
+vim.keymap.set({ "n", "i", "v", "x" }, "<C-S-s>", "<cmd>wa<CR>", { desc = "Save all buffers" })
+
 -- vim.keymap.set({ "n", "v" }, "d", '"2d')
 -- vim.keymap.set({ "n", "v" }, "D", '"2D')
 vim.keymap.set({ "n", "v" }, "c", '"2c')
