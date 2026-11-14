@@ -10,6 +10,9 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
 -- Save all buffers
 vim.keymap.set({ "n", "i", "v", "x" }, "<C-S-s>", "<cmd>wa<CR>", { desc = "Save all buffers" })
 
+-- Visual select the last pasted text
+vim.keymap.set("n", "gp", "`[v`]", { desc = "Select last pasted text" })
+
 -- vim.keymap.set({ "n", "v" }, "d", '"2d')
 -- vim.keymap.set({ "n", "v" }, "D", '"2D')
 vim.keymap.set({ "n", "v" }, "c", '"2c')
