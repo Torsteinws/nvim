@@ -20,3 +20,20 @@ vim.api.nvim_create_autocmd("OptionSet", {
         end
     end,
 })
+
+-- Toggle snacks scroll when codediff opens/closes
+-- Workaround for bug: https://github.com/esmuellert/codediff.nvim/issues/519
+vim.api.nvim_create_autocmd("User", {
+    pattern = "CodeDiffOpen",
+    callback = function()
+        require("snacks").scroll.disable()
+    end,
+})
+
+vim.api.nvim_create_autocmd("User", {
+    pattern = "CodeDiffClose",
+    callback = function()
+        require("snacks").scroll.enable()
+    end,
+})
+
