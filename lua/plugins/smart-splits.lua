@@ -2,7 +2,7 @@ return {
 
     {
         "smart-splits-nvim/smart-splits.nvim",
-        branch = "v3",
+        version = "^3.0.0",
         opts = {
             move = {
                 -- at_edge = "wrap",
